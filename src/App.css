@@ -1,0 +1,21 @@
+.row {
+  margin-right: 20px;
+  background-color: lightgrey;
+}
+
+.table-header {
+  padding-right: 20px;
+
+}
+
+.table-header-item {
+  padding-right: 60px;
+}
+
+.tfoot {
+  align-items: right;
+}
+
+.app-label {
+  padding-right: 20px;
+}
