@@ -90,7 +90,7 @@ function App() {
           <Row>
             <Col>
               <Form.Label className="app-label">Price/Unit</Form.Label>
-              <Form.Control disabled={false} type="number" placeholder="Price Per Unit" ref={ppuRef}/>
+              <Form.Control disabled={false} type="number" ref={ppuRef}/>
             </Col>
           </Row>
           <Row>
