@@ -13,7 +13,7 @@ function App() {
   const [dataItems, setDataItems] = useLocalStorage("dataItems",[]);
 
   const dummyProducts = [
-    { id: "p001", name: "Dragon penis", price: 8000 },
+    { id: "p001", name: "Dragon cheese fingers", price: 8000 },
     { id: "p002", name: "Unicorn corn-dog", price: 5500 },
     { id: "p003", name: "Boiled troll liver", price: 4300 },
     { id: "p004", name: "Fried Shark testicles ", price: 500 },
