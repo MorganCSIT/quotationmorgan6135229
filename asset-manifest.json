@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/quotationmorgan6135229/static/css/main.16db98d2.css",
-    "main.js": "/quotationmorgan6135229/static/js/main.e3fcc89f.js",
+    "main.js": "/quotationmorgan6135229/static/js/main.fb682de3.js",
     "static/js/787.08da95b7.chunk.js": "/quotationmorgan6135229/static/js/787.08da95b7.chunk.js",
     "index.html": "/quotationmorgan6135229/index.html",
     "main.16db98d2.css.map": "/quotationmorgan6135229/static/css/main.16db98d2.css.map",
-    "main.e3fcc89f.js.map": "/quotationmorgan6135229/static/js/main.e3fcc89f.js.map",
+    "main.fb682de3.js.map": "/quotationmorgan6135229/static/js/main.fb682de3.js.map",
     "787.08da95b7.chunk.js.map": "/quotationmorgan6135229/static/js/787.08da95b7.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.16db98d2.css",
-    "static/js/main.e3fcc89f.js"
+    "static/js/main.fb682de3.js"
   ]
 }
