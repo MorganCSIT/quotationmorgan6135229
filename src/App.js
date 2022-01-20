@@ -11,6 +11,7 @@ function App() {
   const dscRef = useRef();
 
   const [dataItems, setDataItems] = useLocalStorage("dataItems",[]);
+  const [dupDataItems, setDupDataItems] = useLocalStorage("dupDataItems",[]);
 
   const dummyProducts = [
     { id: "p001", name: "Dragon cheese fingers", price: 8000 },
@@ -36,16 +37,18 @@ function App() {
     const product = dummyProducts.find(e => e.id === pid);
 
 
-    // if (Object.keys(dataItems).length > 0) {
-    //   for (var key in dataItems) {
-    //     if (product.name === dataItems[key].item) {
-    //       dataItems[key].qty =  parseFloat(qtyRef.current.value) + parseFloat(dataItems[key].qty)
-    //       dataItems[key].dsc = parseFloat(dscRef.current.value) + parseFloat(dataItems[key].dsc)
-    //       setDataItems([...dataItems]);
-    //       return;
-    //     }
-    //   }
-    // }
+    if (Object.keys(dataItems).length > 0) {
+      for (var key in dataItems) {
+        if ((product.name !== dataItems[key].item) && (product.price !== dataItems[key].price)) {
+          dataItems[key].qty = parseFloat(qtyRef.current.value) + parseFloat(dataItems[key].qty)
+          dataItems[key].dsc = parseFloat(dscRef.current.value) + parseFloat(dataItems[key].dsc)
+          setDataItems([...dataItems]);
+          
+        } else { 
+          setDupDataItems([...dupDataItems]);
+        }
+      }
+    }
       
     var itemObj = {
       item: product.name,
